@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E7C8EAD2E8D0DB700C0F41F /* UserAcquisitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C8EAC2E8D0DB700C0F41F /* UserAcquisitionService.swift */; };
+		4E7C8EAE2E8D0DB700C0F41F /* UserAcquisitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7C8EAB2E8D0DB700C0F41F /* UserAcquisitionProtocol.swift */; };
 		84881C38263836AE00B044D5 /* UserAcquisition.h in Headers */ = {isa = PBXBuildFile; fileRef = 84881C36263836AE00B044D5 /* UserAcquisition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84881C3F263836BD00B044D5 /* UserAcquisition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84881C3E263836BD00B044D5 /* UserAcquisition.swift */; };
 		9A11382A97B44411866C92C5 /* Pods_UserAcquisition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E29778A94ADD1FFC0AB420C /* Pods_UserAcquisition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E7C8EAB2E8D0DB700C0F41F /* UserAcquisitionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAcquisitionProtocol.swift; sourceTree = "<group>"; };
+		4E7C8EAC2E8D0DB700C0F41F /* UserAcquisitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAcquisitionService.swift; sourceTree = "<group>"; };
 		84881C33263836AE00B044D5 /* UserAcquisition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserAcquisition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84881C36263836AE00B044D5 /* UserAcquisition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAcquisition.h; sourceTree = "<group>"; };
 		84881C37263836AE00B044D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84881C3E263836BD00B044D5 /* UserAcquisition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAcquisition.swift; sourceTree = "<group>"; };
 		8F7DCEC874E10FA88E1DA1FB /* Pods-UserAcquisition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserAcquisition.debug.xcconfig"; path = "Target Support Files/Pods-UserAcquisition/Pods-UserAcquisition.debug.xcconfig"; sourceTree = "<group>"; };
 		9E29778A94ADD1FFC0AB420C /* Pods_UserAcquisition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserAcquisition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D716AB7C32F0BDA54F9900 /* Pods-UserAcquisition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserAcquisition.release.xcconfig"; path = "Target Support Files/Pods-UserAcquisition/Pods-UserAcquisition.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,7 +65,8 @@
 		84881C35263836AE00B044D5 /* UserAcquisition */ = {
 			isa = PBXGroup;
 			children = (
-				84881C3E263836BD00B044D5 /* UserAcquisition.swift */,
+				4E7C8EAB2E8D0DB700C0F41F /* UserAcquisitionProtocol.swift */,
+				4E7C8EAC2E8D0DB700C0F41F /* UserAcquisitionService.swift */,
 				84881C36263836AE00B044D5 /* UserAcquisition.h */,
 				84881C37263836AE00B044D5 /* Info.plist */,
 			);
@@ -122,7 +125,7 @@
 				TargetAttributes = {
 					84881C32263836AE00B044D5 = {
 						CreatedOnToolsVersion = 12.5;
-						LastSwiftMigration = 1250;
+						LastSwiftMigration = 2600;
 					};
 				};
 			};
@@ -184,7 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84881C3F263836BD00B044D5 /* UserAcquisition.swift in Sources */,
+				4E7C8EAD2E8D0DB700C0F41F /* UserAcquisitionService.swift in Sources */,
+				4E7C8EAE2E8D0DB700C0F41F /* UserAcquisitionProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
