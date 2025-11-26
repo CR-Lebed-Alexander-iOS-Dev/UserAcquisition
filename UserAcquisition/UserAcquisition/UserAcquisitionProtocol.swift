@@ -3,6 +3,8 @@ import StoreKit
 
 /// Protocol for user acquisition tracking and analytics
 protocol UserAcquisitionProtocol {
+    var conversionInfo: UserAcquisitionService.Info { get set }
+    
     /// Processes a refund request with user consent
     /// - Parameter consented: Whether the user has consented to the refund
     func refund(consented: Bool) async

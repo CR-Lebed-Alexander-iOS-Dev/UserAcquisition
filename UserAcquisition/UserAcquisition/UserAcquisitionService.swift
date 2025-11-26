@@ -4,7 +4,9 @@ import StoreKit
 import SwiftyStoreKit
 
 /// Service for tracking user acquisition and purchase analytics
-final class UserAcquisitionService: NSObject {
+final class UserAcquisitionService: NSObject, UserAcquisitionProtocol {
+    
+    var conversionInfo = UserAcquisitionService.Info()
     
     /// API endpoints for the user acquisition service
     enum Endpoints: String {
@@ -30,7 +32,6 @@ final class UserAcquisitionService: NSObject {
         self.appleReceiptValidator = appleReceiptValidator
     }
     
-    private var conversionInfo = UserAcquisitionService.Info()
     private var appVersion: String {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
     }
@@ -288,7 +289,7 @@ private extension UserAcquisitionService {
     }
 }
 
-private extension UserAcquisitionService {
+extension UserAcquisitionService {
     struct Info {
         enum AcquisitionSource {
             case organic, facebook, searchAds, custom(String)
